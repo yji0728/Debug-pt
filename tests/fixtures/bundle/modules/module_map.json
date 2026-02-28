@@ -1,0 +1,6 @@
+{
+  "modules": [
+    {"name": "target.exe", "base": "0x400000"},
+    {"name": "kernel32.dll", "base": "0x70000000"}
+  ]
+}

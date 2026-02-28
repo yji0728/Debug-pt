@@ -1,0 +1,6 @@
+{"ts":1,"tid":10,"type":"call","from":"0x401000","to":"0x401100","module_from":"target.exe","module_to":"target.exe","detail":{}}
+{"ts":2,"tid":10,"type":"call","from":"0x401100","to":"0x70001000","module_from":"target.exe","module_to":"kernel32.dll","detail":{}}
+{"ts":3,"tid":10,"type":"api","from":"0x401120","to":"0x70001000","module_from":"target.exe","module_to":"kernel32.dll","detail":{"api":"CreateFileW","args_preview":["C:/tmp/a.txt"]}}
+{"ts":4,"tid":10,"type":"branch","from":"0x401130","to":"0x401180","module_from":"target.exe","module_to":"target.exe","detail":{"cond":"jne","taken":false,"indirect":true}}
+{"ts":5,"tid":10,"type":"branch","from":"0x401130","to":"0x4011A0","module_from":"target.exe","module_to":"target.exe","detail":{"cond":"jne","taken":false,"indirect":true}}
+{"ts":6,"tid":10,"type":"branch","from":"0x401130","to":"0x4011C0","module_from":"target.exe","module_to":"target.exe","detail":{"cond":"jne","taken":true,"indirect":true}}

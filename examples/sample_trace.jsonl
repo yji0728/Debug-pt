@@ -1,0 +1,14 @@
+{"type":"call","ip":"0x401000","target":"0x402000","func":"main"}
+{"type":"branch","ip":"0x402000","target":"0x402010","func":"dispatcher"}
+{"type":"indirect_jump","ip":"0x402010","target":"0x500100","func":"dispatcher"}
+{"type":"branch","ip":"0x402020","target":"0x402010","func":"dispatcher"}
+{"type":"indirect_jump","ip":"0x402010","target":"0x500200","func":"dispatcher"}
+{"type":"branch","ip":"0x402020","target":"0x402010","func":"dispatcher"}
+{"type":"indirect_jump","ip":"0x402010","target":"0x500300","func":"dispatcher"}
+{"type":"mem_write","ip":"0x402030","target":"0x600000","func":"dispatcher"}
+{"type":"branch","ip":"0x500100","target":"0x500120","func":"handler_a"}
+{"type":"ret","ip":"0x500120","target":"0x402030","func":"handler_a"}
+{"type":"branch","ip":"0x500200","target":"0x500220","func":"handler_b"}
+{"type":"ret","ip":"0x500220","target":"0x402030","func":"handler_b"}
+{"type":"branch","ip":"0x500300","target":"0x500320","func":"handler_c"}
+{"type":"ret","ip":"0x500320","target":"0x402030","func":"handler_c"}
